@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Bills" nameDescription="an Bills" race="undead" experience="5515121" speed="690">
+	<health now="900000" max="900000" />
+	<look type="1701" corpse="8966" />
+	<targetchange interval="20000" chance="15" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag staticattack="85" />
+		<flag lightlevel="0" />
+		<flag lightcolor="0" />
+		<flag targetdistance="1" />
+		<flag runonhealth="1" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-45410" max="-58200" />
+		<attack name="energy" interval="2000" chance="25" length="7" spread="0" min="-45410" max="-53800">
+			<attribute key="areaEffect" value="purpleenergy" />
+		</attack>
+		<attack name="energy" interval="1000" chance="11" range="3" target="1" min="-58410" max="-49200">
+			<attribute key="areaEffect" value="purpleenergy" />
+		</attack>
+		<attack name="earth" interval="1000" chance="9" radius="5" target="0" min="-57850" max="-68200">
+			<attribute key="areaEffect" value="bigplants" />
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="40">
+		<defense name="healing" interval="2000" chance="15" min="9000" max="15000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="50" />
+		<element firePercent="-1" />
+	</elements>
+	<immunities>
+		<immunity ice="1" />
+		<immunity energy="1" />
+	</immunities>
+	<loot>
+		<item name="gold coin" countmax="64" chance="100000" />
+		<item name="platinum coin" countmax="2" chance="25000" />
+		<item name="pure energy" chance="100000" />
+	</loot>
+</monster>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Buggy Buggy" nameDescription="Buggy Buggy" race="blood" experience="2510000" speed="360">
+	<health now="658500" max="658500" />
+	<look type="1482" head="19" body="96" legs="21" feet="81" corpse="6068" />
+	<targetchange interval="5000" chance="8" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="85" />
+		<flag runonhealth="0" />
+		<flag isboss="1" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-27410" max="-38910" />
+		<attack name="energy" interval="1000" chance="11" length="8" spread="0" min="-37250" max="-45819">
+			<attribute key="areaEffect" value="purpleenergy" />
+		</attack>
+		<attack name="manadrain" interval="2000" chance="14" radius="5" target="0" min="-37590" max="-44500">
+			<attribute key="areaEffect" value="stun" />
+		</attack>
+		<attack name="fire" interval="1000" chance="11" radius="5" target="1" min="-34550" max="-44520">
+			<attribute key="areaEffect" value="firearea" />
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="5" radius="7" target="0" min="-42510" max="-52150">
+			<attribute key="areaEffect" value="poff" />
+		</attack>
+	</attacks>
+	<defenses armor="70" defense="65">
+		<defense name="healing" interval="1000" chance="11" min="400" max="900">
+			<attribute key="areaEffect" value="greenshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element icePercent="99" />
+		<element energyPercent="99" />
+		<element earthPercent="99" />
+		<element holyPercent="99" />
+		<element deathPercent="99" />
+		<element firePercent="99" />
+		<element drownPercent="-50" />
+	</elements>
+	<immunities>
+		<immunity lifedrain="1" />
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="0">
+		<voice sentence="YIAAHAHAHAHAHA!" />
+		<voice sentence="BUGGGYYY!" />
+		<voice sentence="AQUI NO HAY NADIE MEJOR QUE YO!" />
+		<voice sentence="VIENES POR EL ONE PIECE." />
+		<voice sentence="QUIZAS EL ONE PIECE SON LOS AMIGOS QUE HACEMOS EN EL CAMINO." />
+		<voice sentence="Delicious!" />
+	</voices>
+	<loot>
+		<item name="white pearl" countmax="7" chance="3000" />
+		<item name="gold coin" countmax="100" chance="80000" />
+		<item name="gold coin" countmax="100" chance="70000" />
+		<item name="gold coin" countmax="83" chance="60000" />
+		<item name="crystal coin" countmax="3" chance="100000" />
+		<item name="mastermind shield" chance="1650" />
+		<item name="assassin star" countmax="25" chance="100000" />
+		<item name="great mana potion" chance="7000" />
+		<item name="great health potion" chance="7000" />
+	</loot>
+</monster>
